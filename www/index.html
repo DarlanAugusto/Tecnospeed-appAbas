@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/fonts.css">
     <link rel="stylesheet" type="text/css" href="mobileui/style.css">
         <meta name="format-detection" content="telephone=no">
         <meta charset="utf-8">
@@ -9,8 +10,38 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Apache Cordova</title>
     </head>
-    <body>
+    <body class="gray-100">
+      <div class="header light-blue-800">
+        <button class="left icon ion-navicon"></button>
+        <h1>AppTab</h1>
+      </div>
 
+      <div class="tab-content active has-header has-sub-footer padding" id="tab-message">
+        <div class="row padding">
+          <div class="col align-center text-strong text-big">Mensagens</div>
+        </div>
+        <p>111Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum quaerat eum necessitatibus beatae praesentium magnam dolorem sint ad facilis porro dolores, et corporis dolore! Perferendis amet itaque fuga veniam?</p>
+      </div>
+
+      <div class="tab-content has-header has-sub-footer padding" id="tab-users">
+        <div class="row padding">
+          <div class="col align-center text-strong text-big">Usuários</div>
+        </div>
+        <p>222Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum quaerat eum necessitatibus beatae praesentium magnam dolorem sint ad facilis porro dolores, et corporis dolore! Perferendis amet itaque fuga veniam?</p>
+      </div>
+
+      <div class="tab-content has-header has-sub-footer padding" id="tab-calls">
+        <div class="row padding">
+          <div class="col align-center text-strong text-big">Ligações</div>
+        </div>
+        <p>333Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima dolorum quaerat eum necessitatibus beatae praesentium magnam dolorem sint ad facilis porro dolores, et corporis dolore! Perferendis amet itaque fuga veniam?</p>
+      </div>
+
+      <div class="footer light-blue-800 tab">
+        <button class="light-blue-800 icon ion-chatbox-working active" onclick="openTab('tab-message')">Mensagens</button>
+        <button class="light-blue-800 icon ion-ios-people" onclick="openTab('tab-users')">Usuários</button>
+        <button class="light-blue-800 icon ion-android-call" onclick="openTab('tab-calls')">Ligações</button>
+      </div>
       
       <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="mobileui/mobileui.js"></script>
